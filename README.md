@@ -34,7 +34,10 @@ Essas são as comparações mínimas que devem ser feitas para garantir o funcio
 
 ![handpoker](https://user-images.githubusercontent.com/49800445/159580031-9fe7e21a-295e-40a2-bd6d-e48e45709790.png)
 
-
+Links de referência sobre o jogo de Poker:
++ https://www.partypoker.com/pt-br/how-to-play/hand-rankings
++ https://pokerdicas.com/regras/regras-de-desempate-no-texas-holdem/
++ https://starspoker.com.br/mao-de-forca/
 
 ![valor_carta_errado](https://user-images.githubusercontent.com/49800445/159579771-93e1b67f-f888-4e89-bab0-158920c1b051.png)
 
