@@ -39,6 +39,21 @@ Links de referência sobre o jogo de Poker:
 + https://pokerdicas.com/regras/regras-de-desempate-no-texas-holdem/
 + https://starspoker.com.br/mao-de-forca/
 
+<h3>Tipos de jogadas no Poker</h3>
+
+- 1º  ***ROYAL STRAIGHT FLUSH*** é uma sequência, de 10-J-Q-K-A, do mesmo naipe.
+- 2º  ***STRAIGHT FLUSH*** => cinco cartas em sequência do mesmo naipe 
+- 3º  ***FOUR OF A KIND*** => quatro cartas de mesmo valor
+- 4º  ***FULL HOUSE*** => trinca + par, 3 cartas de um valor e um par de outro valor
+- 5º  ***FLUSH*** => cinco cartas em qualquer sequência do mesmo naipe        
+- 6º  ***STRAIGHT*** => Cinco cartas em sequência.
+- 7º  ***THREE OF A KIND*** => Três cartas de mesmo valor.
+- 8º  ***TWO PAIR*** => duas cartas de um valor e outras duas cartas de outro valor.
+- 9º  ***ONE PAIR*** => um par de cartas independente do naipe
+- 10º ***HIGH CARD*** => carta de maior valor
+
+<h3>Desenvolvimento</h3>
+
 ![valor_carta_errado](https://user-images.githubusercontent.com/49800445/159579771-93e1b67f-f888-4e89-bab0-158920c1b051.png)
 
 ![qtd_invalida](https://user-images.githubusercontent.com/49800445/159579870-d424eeda-3b78-41b8-b246-cfc84ad3dc8c.png)
