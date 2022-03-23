@@ -71,7 +71,7 @@ Nesta fase já estamos com a mão de cartas nos formatos abaixo.
 
 Na formatação da lista de cartas é realizado uma validação se todos os valores e naipes que foram informados estão corretos. Se houver qualquer divergência é criado uma except de erro.
 
-No exemplo da erro vemos no log que um dos jogadores recebeu uma carta que não existe no jogo com o valor 'B'
+No exemplo de erro temos no log que um dos jogadores recebeu uma carta que não existe no jogo com o valor 'B' ("BS TD KC JC 7C").
 ![valor_carta_errado](https://user-images.githubusercontent.com/49800445/159579771-93e1b67f-f888-4e89-bab0-158920c1b051.png)
 
 Na função best_hand, a primeira validação é feita para a sequência de cartas que possui o maior tipo de jogada.
