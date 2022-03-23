@@ -6,6 +6,8 @@ ___
 
 + [![Linkedin Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=LINK_GIT)](https://www.linkedin.com/in/marcos-bezerra-252375197)
 
+![GitHub all releases](https://img.shields.io/github/downloads/marcos-bezerra/Desafio_DataH/total?style=flat-square)
+
 + https://www.linkedin.com/in/marcos-bezerra-252375197
 ---
 
