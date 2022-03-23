@@ -155,5 +155,4 @@ Se houver algum teste em que o resultado seja diferente do predito o programa pa
 
 ![Captura de Tela 2022-03-22 às 23 04 46](https://user-images.githubusercontent.com/49800445/159608375-3e3b4eb0-61f9-413d-9fbe-3b157527fdfc.png)
 
-<p align="center">   <img alingn="center" src="
-![GitHub all releases](https://img.shields.io/github/downloads/marcos-bezerra/Desafio_DataH/total?style=flat-square)" /></p>
+<p align="center">   <img alingn="![GitHub all releases](https://img.shields.io/github/downloads/marcos-bezerra/Desafio_DataH/total?style=flat-square)" /></p>
