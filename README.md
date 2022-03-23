@@ -101,7 +101,7 @@ list_kicker=[3,7,8,9,10]
 - 9º  ***ONE PAIR*** => um par de cartas independente do naipe
 - 10º ***HIGH CARD*** => carta de maior valor
 
-Esta separação facilita devido ao tipo de desempate que acontece pelas cartas que compõe o tipo de jogada e pelo kicker.
+Esta separação facilita devido ao tipo de desempate que acontece pelas cartas que compõe a jogada e pelo kicker.
 Para todos os tipos de jogos é aplicado a seguinte sequência de validação:
 + validando os empates: quadra, trinca, dois pares, um par ou carta mais alta
 + foi utilizado como desempate o valor sequencial da mão em ordem decrescente ("kicker")
@@ -112,6 +112,13 @@ Para todos os tipos de jogos é aplicado a seguinte sequência de validação:
 + [13] - kicker
 + todas as listas em ordem decrescente
 + sendo utilizadas do maior para o menor valor para o desempate
+
+O retorno após a comparação de cartas para determinar qual a maior jogada é as palavras 'WIN' e 'LOSS'.
+A realização dos testes é feita utilizando a lib unittest, o retorno é validado "assertTrue( expr , msg = Nenhum )" se o resultado é igual ou não ao predito como verdadeiro.
+
+![Captura de Tela 2022-03-22 às 22 57 27](https://user-images.githubusercontent.com/49800445/159606668-f08a9828-e52a-44d6-8ce4-b3c4c399b5c7.png)
+
+Observe que isso é equivalente a e não a (use para o último). Este método também deve ser evitado quando métodos mais específicos estiverem disponíveis (por exemplo , em vez de ), porque eles fornecem uma mensagem de erro melhor em caso de falha.bool(expr) is Trueexpr is TrueassertIs(expr, True)assertEqual(a, b)assertTrue(a == b)
 
 
 
