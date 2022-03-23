@@ -156,4 +156,6 @@ Se houver algum teste em que o resultado seja diferente do predito o programa pa
 ![Captura de Tela 2022-03-22 às 23 04 46](https://user-images.githubusercontent.com/49800445/159608375-3e3b4eb0-61f9-413d-9fbe-3b157527fdfc.png)
 
 <p align="center"> Contagem de Visitas </p>
-<p align="center">   <img alingn="center" src="https://profile-counter.glitch.me/https://github.com/marcos-bezerra/count.svg" /></p>
+<p align="center">   <img alingn="center" src="/https://github.com/marcos-bezerra/count.svg" /></p>
+
+[![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=LINK_GIT)](LINK_GIT)
