@@ -13,7 +13,7 @@ ___
 5. [Transformando em uma Lista](#section5)
 6. [Validação da quantidade de cartas](#section6)
 7. [Estrutura criada para interpretação das cartas](#section7)
-8. [Forma de desempate](#section8)
+8. [Validando um desempate](#section8)
 9. [Metodologia para os testes](#section9)
 10. [Execução dos testes](#section10)
 
@@ -106,7 +106,7 @@ Hand_2: (9, [7],[11,5,4])
 No caso acima temos uma mão com o valor 8 que representa TWO PAIR e a outra com o valor 9 que equivale a ONE PAIR. A primeira mão ganha por ser mais forte, e isto é validado pelo valor numérico atribuido para cada tipo de jogada. O valor 8 representa que é mais forte que o 9, ou TWO PAIR ganha de ONE PAIR. 
 
 <a id='section8'></a>
-<h3>Forma de desempate</h3>
+<h3>Validando um desempate</h3>
 No caso de haver um empate as cartas estão separadas de forma que nos possibilitam fazer o uso do maior valor para o menor. Desta forma nesta estrutura criada é possível identificar qual o tipo de jogada, as cartas que fazem parte do tipo de jogo e as cartas que serão utilizadas para desempate.
 
 Para o desempate existe duas listas que foram criadas. O que diferencia é a característica de terem cinco cartas em sequência (também incluído o FULL HOUSE) ou naipes na jogada.
