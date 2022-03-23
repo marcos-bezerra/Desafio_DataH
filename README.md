@@ -39,6 +39,10 @@ Links de referência sobre o jogo de Poker:
 + https://pokerdicas.com/regras/regras-de-desempate-no-texas-holdem/
 + https://starspoker.com.br/mao-de-forca/
 
+<h3>Desenvolvimento</h3>
+
+O desafio consiste em verificar qual mão de poker é mais alta. Conforme informado para os testes não teremos jogadas com empate. Para os valores das cartas foi criado uma sequência numérica que representa a ordem inversa de grandeza para cada tipo de jogada existente no poker. 
+
 <h3>Tipos de jogadas no Poker</h3>
 
 - 1º  ***ROYAL STRAIGHT FLUSH*** é uma sequência, de 10-J-Q-K-A, do mesmo naipe.
@@ -52,7 +56,8 @@ Links de referência sobre o jogo de Poker:
 - 9º  ***ONE PAIR*** => um par de cartas independente do naipe
 - 10º ***HIGH CARD*** => carta de maior valor
 
-<h3>Desenvolvimento</h3>
+A informação com as cartas de cada jogador é recebida em forma de string ("TC TH 5C 5H KH"). Esta é transformada com o comando split, em uma lista que contém para cada posição as cartas da mão recebida ['TS', 'JS', 'QS', 'KS', 'AS']. 
+
 
 
 ![valor_carta_errado](https://user-images.githubusercontent.com/49800445/159579771-93e1b67f-f888-4e89-bab0-158920c1b051.png)
