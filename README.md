@@ -2,12 +2,6 @@
 ![desafio](https://user-images.githubusercontent.com/49800445/159580137-2b8042a1-ed51-4229-9ce2-f212534d32bd.png)
 ___
 - Autor: Marcos Luiz Cliton Bezerra
-+ [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=LINK_GIT)](https://github.com/marcos-bezerra)
-
-+ [![Linkedin Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=LINK_GIT)](https://www.linkedin.com/in/marcos-bezerra-252375197)
-
-![GitHub all releases](https://img.shields.io/github/downloads/marcos-bezerra/Desafio_DataH/total?style=flat-square)
-
 + https://www.linkedin.com/in/marcos-bezerra-252375197
 ---
 
@@ -162,3 +156,4 @@ Se houver algum teste em que o resultado seja diferente do predito o programa pa
 ![Captura de Tela 2022-03-22 às 23 04 46](https://user-images.githubusercontent.com/49800445/159608375-3e3b4eb0-61f9-413d-9fbe-3b157527fdfc.png)
 
 
+![GitHub all releases](https://img.shields.io/github/downloads/marcos-bezerra/Desafio_DataH/total?style=flat-square)
