@@ -17,7 +17,7 @@ ___
 3. [Modelagem da codificação que interpreta o valor das cartas](#section9)<br>
   3.1 [Estrutura criada para interpretação das cartas](#section10)<br>
   3.1 [Verificando um empate](#section11)<br>
-4. [Evaluation Algoritmo e Métricas](#section12)<br>
+4. [Avaliação do Algoritmo e Métricas](#section12)<br>
   4.1 [Metodologia para os testes](#section13)<br>
   4.1 [Execução dos testes](#section14)<br>
 
@@ -139,7 +139,7 @@ list_kicker=[3,7,8,9,10]
 - 10º ***HIGH CARD*** => carta de maior valor
 
 <a id='section12'></a>
-<h3>Evaluation Algoritmo e Métricas</h3>
+<h3>Avaliação do Algoritmo e Métricas</h3>
 
 <a id='section13'></a>
 <h3>Metodologia para os testes</h3>
