@@ -113,7 +113,7 @@ Para todos os tipos de jogos é aplicado a seguinte sequência de validação:
 + todas as listas em ordem decrescente
 + sendo utilizadas do maior para o menor valor para o desempate
 
-O retorno após a comparação de cartas para determinar qual a maior jogada é as palavras 'WIN' e 'LOSS'.
+O retorno após a comparação de cartas para determinar qual a maior jogada são as palavras 'WIN' e 'LOSS'.
 A realização dos testes é feita utilizando a lib unittest, o retorno é validado "assertTrue( expr , msg = Nenhum )" se o resultado é igual ou não ao predito como verdadeiro.
 
 ![Captura de Tela 2022-03-22 às 22 57 27](https://user-images.githubusercontent.com/49800445/159606668-f08a9828-e52a-44d6-8ce4-b3c4c399b5c7.png)
