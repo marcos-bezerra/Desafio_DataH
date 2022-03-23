@@ -8,7 +8,7 @@ ___
 Um famoso cassino de repente enfrenta um grande declínio de sua receita. Então eles decidem oferecer uma versão online do jogo de Poker. Pode ajudá-los escrevendo um algoritmo para ranquear as mãos de Poker?
 
 <h3>Objetivo</h3>
-1. Crie um programa em python que represente uma mão de Poker chamada "PokerHand" e crie os métodos/classes nele para compar uma mão de Poker com outra e definir a vencedora.
+1. Crie um programa em python que represente uma mão de Poker chamada "PokerHand" e crie os métodos/classes para comparar uma mão de Poker com outra e definir a vencedora.
 
 + Esse programa PokerHand deverá ter um construtor que aceite uma String contendo 5 cartas.
 + Um espaço será usado como separador de cada carta.
@@ -21,16 +21,13 @@ Um famoso cassino de repente enfrenta um grande declínio de sua receita. Então
 2. O funcionamento da solução deve ser garantida através de testes unitários. A seguir encontra-se um trecho de código com as comparações e seus respectivos resultados.
 Essas são as comparações mínimas que devem ser feitas para garantir o funcionamento do seu programa. Utilize esse código como base da sua implementação dos testes unitários.
 
-<h3>Sequência do maior para menor valor de cada carta</h3>
+<h3>Sequência do maior para o menor valor de cada carta</h3>
 
 - 2, 3, 4, 5 ,6 ,7 , 8, 9, 10 T, 11 J (Valete), 12 Q (Rainha), 13 K (Rei), 14 A (Ace)
 
 <h3>Naipes</h3>
 
-- S (Espadas)
-- H (Copas)
-- D (Ouros)
-- C (Paus)
+- S (Espadas), H (Copas), D (Ouros), C (Paus)
 
 ![handpoker](https://user-images.githubusercontent.com/49800445/159580031-9fe7e21a-295e-40a2-bd6d-e48e45709790.png)
 
@@ -43,7 +40,7 @@ Links de referência sobre o jogo de Poker:
 
 O desafio consiste em verificar qual mão de poker é mais alta. Conforme informado para os testes não teremos jogadas com empate. Para os valores das cartas foi criado uma sequência numérica que representa a ordem inversa de grandeza para cada tipo de jogada existente no poker. 
 
-<h3>Tipos de jogadas no Poker</h3>
+<h3>Tipos de jogadas no Poker em ordem decrescente de maior valor</h3>
 
 - 1º  ***ROYAL STRAIGHT FLUSH*** é uma sequência, de 10-J-Q-K-A, do mesmo naipe.
 - 2º  ***STRAIGHT FLUSH*** => cinco cartas em sequência do mesmo naipe 
@@ -56,7 +53,7 @@ O desafio consiste em verificar qual mão de poker é mais alta. Conforme inform
 - 9º  ***ONE PAIR*** => um par de cartas independente do naipe
 - 10º ***HIGH CARD*** => carta de maior valor
 
-A informação com as cartas de cada jogador é recebida em forma de string ("TC TH 5C 5H KH"). Que é transformada em uma lista com o comando split, contendo cada posição das cartas da mão recebida ['TS','JS','QS','KS','AS']. Dentre as validações existentes, inicialmente é feito uma verificação se a quantidade de cartas recebidas é igual a cinco.
+A informação com as cartas de cada jogador é recebida em forma de string ("TC TH 5C 5H KH"). Que é transformada em uma lista, contendo cada posição das cartas ['TS','JS','QS','KS','AS']. Dentre as validações existentes, inicialmente é feito uma verificação se a quantidade de cartas recebidas é igual a cinco.
 
 ![qtd_invalida](https://user-images.githubusercontent.com/49800445/159579870-d424eeda-3b78-41b8-b246-cfc84ad3dc8c.png)
 
@@ -64,8 +61,8 @@ A informação com as cartas de cada jogador é recebida em forma de string ("TC
 
 values_ = {'2':2,'3':3,'4':4,'5':5,'6':6,'7':7,'8':8,'9':9,'T':10,'J':11,'Q':12,'K':13,'A':14}
 
-Nesta fase já estamos com a mão de cartas nos formatos abaixo.
-+ cartas de uma mão: [[13, 'H'], [10, 'H'], [10, 'C'], [5, 'H'], [5, 'C']]
+Nesta fase já estamos com as cartas nos seguintes formatos:
++ lista das cartas: [[13, 'H'], [10, 'H'], [10, 'C'], [5, 'H'], [5, 'C']]
 + valores das cartas: [13, 10, 10, 5, 5]
 + naipes das cartas: ['H', 'H', 'C', 'H', 'C']
 
@@ -77,11 +74,12 @@ No exemplo de erro temos no log que um dos jogadores recebeu uma carta que não 
 Na função best_hand, a primeira validação é feita para a sequência de cartas que possui o maior tipo de jogada.
 
 Hand_1: (8, [10, 5], [13])
-Hand_2: (9, [9], [14,5])
-+ 8      . o valor 8 representa Two Pair
-+ [10,5] . temos Two Pair das cartas 10 e 5
++ 8      . o valor 8 representa o jogo Dois Pares
++ [10,5] . que temos Dois Pares das cartas 10 e 5
 + [13]   . esta carta é o kicker, que é utilizada para o desempate
-+ 
+
+Hand_2: (9, [7],[11,5,4])
+
 No caso acima temos uma mão com o valor 8 que representa TWO PAIR e a outra com o valor 9 que equivale a ONE PAIR. A primeira mão ganha por ser mais forte, e isto é validado pelo valor numérico atribuido para cada tipo de jogada. O valor 8 representa que é mais forte que o 9, ou TWO PAIR ganha de ONE PAIR. 
 
 No caso de haver um empate as cartas estão separadas de forma que nos possibilitam fazer o uso do maior valor para o menor. Desta forma nesta estrutura criada é possível identificar qual o tipo de jogada, as cartas que fazem parte do tipo de jogo e as cartas que serão utilizadas para desempate.
@@ -103,25 +101,12 @@ list_kicker=[3,7,8,9,10]
 - 10º ***HIGH CARD*** => carta de maior valor
 
 Esta separação facilita devido ao tipo de desempate que acontece pelas cartas que compõe a jogada e pelo kicker.
-Para todos os tipos de jogos é aplicado a seguinte sequência de validação:
-+ validando os empates: quadra, trinca, dois pares, um par ou carta mais alta
-+ foi utilizado como desempate o valor sequencial da mão em ordem decrescente ("kicker")
-+ abaixo um exemplo da lógica utilizada:
-+ (8, [10, 5], [13])
-+ 8 - O valor 8 indica o tipo de joto "Two Par"
-+ [10,5] - Two Par de valores 10 e 5
-+ [13] - kicker
-+ todas as listas em ordem decrescente
-+ sendo utilizadas do maior para o menor valor para o desempate
-
-O retorno após a comparação de cartas para determinar qual a maior jogada são as palavras 'WIN' e 'LOSS'.
-A realização dos testes é feita utilizando a lib unittest, o retorno é validado "assertTrue( expr , msg = Nenhum )" se o resultado é igual ou não ao predito como verdadeiro.
+O retorno após a comparação de cartas para determinar qual a maior jogada são 'WIN' e 'LOSS'.
+A realização dos testes é feita utilizando a lib unittest, o retorno é validado "assertTrue( expr , msg = Nenhum )" se o resultado é igual ou não ao predito.
 
 ![Captura de Tela 2022-03-22 às 22 57 27](https://user-images.githubusercontent.com/49800445/159606668-f08a9828-e52a-44d6-8ce4-b3c4c399b5c7.png)
 
-Sendo executado todos os casos existentes no teste, é apresentado uma mensagem de Ok.
+Se houver algum teste em que o resultado seja diferente do predito o programa para de executar e apresenta uma mensagem de erro. Sendo todos os casos executados no teste sem erro, é apresentado uma mensagem de Ok.
 
 ![Captura de Tela 2022-03-22 às 23 04 46](https://user-images.githubusercontent.com/49800445/159608375-3e3b4eb0-61f9-413d-9fbe-3b157527fdfc.png)
-
-
 
