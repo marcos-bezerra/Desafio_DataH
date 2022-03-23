@@ -15,11 +15,7 @@ ___
 7. [Estrutura criada para interpretação das cartas](#section7)
 8. [Forma de desempate](#section8)
 9. [Metodologia para os testes](#section9)
-10. [](#section10)
-11. [](#section11)
-12. [](#section12)
-
-
+10. [Execução dos testes](#section10)
 
 <a id='section1'></a>
 <h3>Desafio</h3>
