@@ -6,7 +6,7 @@ ___
 ---
 
 ### Sumário
-1. [Entendendo as regras do Desafio](#section1)
+1. [Entendendo as regras do Desafio](#section1)<br>
   1.1 [Desafio](#section2)<br>
   1.2 [Objetivo](#section3)<br>
 2. [Preparação dos Dados](#section4)<br>
