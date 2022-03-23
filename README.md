@@ -30,7 +30,7 @@ Um famoso cassino de repente enfrenta um grande declínio de sua receita. Então
 
 <a id='section3'></a>
 <h3>Objetivo</h3>
-1. Crie um programa em python que represente uma mão de Poker chamada "PokerHand" e crie os métodos/classes para comparar uma mão de Poker com outra e definir a vencedora.
+Crie um programa em python que represente uma mão de Poker chamada "PokerHand" e crie os métodos/classes para comparar uma mão de Poker com outra e definir a vencedora.
 
 + Esse programa PokerHand deverá ter um construtor que aceite uma String contendo 5 cartas.
 + Um espaço será usado como separador de cada carta.
@@ -40,7 +40,7 @@ Um famoso cassino de repente enfrenta um grande declínio de sua receita. Então
 + O resultado deve ser um enumerado com os resultados: WIN ou LOSS.
 
 <h3>Testes Unitários</h3>
-2. O funcionamento da solução deve ser garantida através de testes unitários. A seguir encontra-se um trecho de código com as comparações e seus respectivos resultados.
+O funcionamento da solução deve ser garantida através de testes unitários. A seguir encontra-se um trecho de código com as comparações e seus respectivos resultados.
 Essas são as comparações mínimas que devem ser feitas para garantir o funcionamento do seu programa. Utilize esse código como base da sua implementação dos testes unitários.
 
 <h3>Sequência do maior para o menor valor de cada carta</h3>
