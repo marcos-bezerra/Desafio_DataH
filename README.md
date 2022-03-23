@@ -69,6 +69,10 @@ Nesta fase já estamos com a mão de cartas nos formatos abaixo.
 + valores das cartas: [13, 10, 10, 5, 5]
 + naipes das cartas: ['H', 'H', 'C', 'H', 'C']
 
+Na formatação da lista de cartas é realizado uma validação se todos os valores e naipes que foram informados estão corretos. Se houver qualquer divergência é criado uma except de erro.
+
+![valor_carta_errado](https://user-images.githubusercontent.com/49800445/159579771-93e1b67f-f888-4e89-bab0-158920c1b051.png)
+
 Na função best_hand, a primeira validação é feita para a sequência de cartas que possui o maior tipo de jogada.
 
 Hand_1: (8, [10, 5], [13])
@@ -112,4 +116,4 @@ Para todos os tipos de jogos é aplicado a seguinte sequência de validação:
 
 
 
-![valor_carta_errado](https://user-images.githubusercontent.com/49800445/159579771-93e1b67f-f888-4e89-bab0-158920c1b051.png)
+
