@@ -7,9 +7,9 @@ ___
 
 ### Sumário
 1. [Entendendo as regras do Desafio](#section1)
-  2. [Desafio](#section2)<br>
-  3. [Objetivo](#section3)<br>
-4. [Preparação dos Dados](#section4)<br>
+  1.1 [Desafio](#section2)<br>
+  1.2 [Objetivo](#section3)<br>
+2. [Preparação dos Dados](#section4)<br>
   5. [Desenvolvimento](#section5)
   6. [Tipos de Jogadas no Poker](#section6)
   7. [Transformando em uma Lista](#section7)
