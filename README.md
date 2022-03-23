@@ -56,10 +56,14 @@ O desafio consiste em verificar qual mão de poker é mais alta. Conforme inform
 - 9º  ***ONE PAIR*** => um par de cartas independente do naipe
 - 10º ***HIGH CARD*** => carta de maior valor
 
-A informação com as cartas de cada jogador é recebida em forma de string ("TC TH 5C 5H KH"). Esta é transformada com o comando split, em uma lista que contém para cada posição as cartas da mão recebida ['TS', 'JS', 'QS', 'KS', 'AS']. 
+A informação com as cartas de cada jogador é recebida em forma de string ("TC TH 5C 5H KH"). Esta é transformada com o comando split, em uma lista que contém para cada posição as cartas da mão recebida ['TS','JS','QS','KS','AS']. Dentre as validações existentes, inicialmente é feito uma verificação se a quantidade de cartas recebidas é igual a cinco.
+
+![qtd_invalida](https://user-images.githubusercontent.com/49800445/159579870-d424eeda-3b78-41b8-b246-cfc84ad3dc8c.png)
+
+Com a lista de cartas de cada jogador já criada, é criado um dicionário onde os valores que estão no formado string são transformados para tipo numérico.E os naipes são transformados de letras que representam cada carta para números.
+
+values_ = {'2':2,'3':3,'4':4,'5':5,'6':6,'7':7,'8':8,'9':9,'T':10,'J':11,'Q':12,'K':13,'A':14}
 
 
 
 ![valor_carta_errado](https://user-images.githubusercontent.com/49800445/159579771-93e1b67f-f888-4e89-bab0-158920c1b051.png)
-
-![qtd_invalida](https://user-images.githubusercontent.com/49800445/159579870-d424eeda-3b78-41b8-b246-cfc84ad3dc8c.png)
