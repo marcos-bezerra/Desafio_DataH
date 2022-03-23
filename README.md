@@ -10,16 +10,16 @@ ___
   1.1 [Desafio](#section2)<br>
   1.2 [Objetivo](#section3)<br>
 2. [Preparação dos Dados](#section4)<br>
-  2.1 [Desenvolvimento](#section5)
-  2.2 [Tipos de Jogadas no Poker](#section6)
-  2.3 [Transformando em uma Lista](#section7)
-  2.4 [Validação da quantidade de cartas](#section8)
-3. [Modelagem da codificação que interpreta o valor das cartas](#section9)
-  3.1 [Estrutura criada para interpretação das cartas](#section10)
-  3.1 [Verificando um empate](#section11)
-4. [Evaluation Algoritmo e Métricas](#section12)
-  4.1 [Metodologia para os testes](#section13)
-  4.1 [Execução dos testes](#section14)
+  2.1 [Desenvolvimento](#section5)<br>
+  2.2 [Tipos de Jogadas no Poker](#section6)<br>
+  2.3 [Transformando em uma Lista](#section7)<br>
+  2.4 [Validação da quantidade de cartas](#section8)<br>
+3. [Modelagem da codificação que interpreta o valor das cartas](#section9)<br>
+  3.1 [Estrutura criada para interpretação das cartas](#section10)<br>
+  3.1 [Verificando um empate](#section11)<br>
+4. [Evaluation Algoritmo e Métricas](#section12)<br>
+  4.1 [Metodologia para os testes](#section13)<br>
+  4.1 [Execução dos testes](#section14)<br>
 
 <a id='section1'></a>
 <h3>Entendendo as regras do Desafio</h3>
