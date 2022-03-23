@@ -6,22 +6,29 @@ ___
 ---
 
 ### Sumário
-1. [Desafio](#section1)
-2. [Objetivo](#section2)
-3. [Desenvolvimento](#section3)
-4. [Tipos de Jogadas no Poker](#section4)
-5. [Transformando em uma Lista](#section5)
-6. [Validação da quantidade de cartas](#section6)
-7. [Estrutura criada para interpretação das cartas](#section7)
-8. [Verificando um empate](#section8)
-9. [Metodologia para os testes](#section9)
-10. [Execução dos testes](#section10)
+1. [Entendendo as regras do Desafio](#section1)
+  2. [Desafio](#section2)
+  3. [Objetivo](#section3)
+4. [Preparação dos Dados](#section4)
+  5. [Desenvolvimento](#section5)
+  6. [Tipos de Jogadas no Poker](#section6)
+  7. [Transformando em uma Lista](#section7)
+  8. [Validação da quantidade de cartas](#section8)
+9. [Modelagem da codificação que interpreta o valor das cartas](#section9)
+  10. [Estrutura criada para interpretação das cartas](#section10)
+  11. [Verificando um empate](#section11)
+12. [Evaluation Algoritmo e Métricas](#section12)
+  13. [Metodologia para os testes](#section13)
+  14. [Execução dos testes](#section14)
 
 <a id='section1'></a>
+<h3>Entendendo as regras do Desafio</h3>
+
+<a id='section2'></a>
 <h3>Desafio</h3>
 Um famoso cassino de repente enfrenta um grande declínio de sua receita. Então eles decidem oferecer uma versão online do jogo de Poker. Pode ajudá-los escrevendo um algoritmo para ranquear as mãos de Poker?
 
-<a id='section2'></a>
+<a id='section3'></a>
 <h3>Objetivo</h3>
 1. Crie um programa em python que represente uma mão de Poker chamada "PokerHand" e crie os métodos/classes para comparar uma mão de Poker com outra e definir a vencedora.
 
@@ -51,11 +58,14 @@ Links de referência sobre o jogo de Poker:
 + https://pokerdicas.com/regras/regras-de-desempate-no-texas-holdem/
 + https://starspoker.com.br/mao-de-forca/
 
-<a id='section3'></a>
+<a id='section4'></a>
+<h3>Preparação dos Dados</h3>
+
+<a id='section5'></a>
 <h3>Desenvolvimento</h3>
 O desafio consiste em verificar qual mão de poker é mais alta. Conforme informado para os testes não teremos jogadas com empate. Para os valores das cartas foi criado uma sequência numérica que representa a ordem inversa de grandeza para cada tipo de jogada existente no poker.
 
-<a id='section4'></a>
+<a id='section6'></a>
 <h3>Tipos de Jogadas no Poker</h3>
 Tipos de jogadas no Poker em ordem decrescente de maior valor
 
@@ -70,7 +80,7 @@ Tipos de jogadas no Poker em ordem decrescente de maior valor
 - 9º  ***ONE PAIR*** => um par de cartas independente do naipe
 - 10º ***HIGH CARD*** => carta de maior valor
 
-<a id='section5'></a>
+<a id='section7'></a>
 <h3>Transformando em uma Lista</h3>
 A informação com as cartas de cada jogador é recebida em forma de string ("TC TH 5C 5H KH"). Que é transformada em uma lista, contendo cada posição das cartas ['TS','JS','QS','KS','AS']. Dentre as validações existentes, inicialmente é feito uma verificação se a quantidade de cartas recebidas é igual a cinco.
 
@@ -85,14 +95,17 @@ Nesta fase já estamos com as cartas nos seguintes formatos:
 + valores das cartas: [13, 10, 10, 5, 5]
 + naipes das cartas: ['H', 'H', 'C', 'H', 'C']
 
-<a id='section6'></a>
+<a id='section8'></a>
 <h3>Validação da quantidade de cartas</h3>
 Na formatação da lista de cartas é realizado uma validação se todos os valores e naipes que foram informados estão corretos. Se houver qualquer divergência é criado uma except de erro.
 
 No exemplo de erro temos no log que um dos jogadores recebeu uma carta que não existe no jogo com o valor 'B' ("BS TD KC JC 7C").
 ![valor_carta_errado](https://user-images.githubusercontent.com/49800445/159579771-93e1b67f-f888-4e89-bab0-158920c1b051.png)
 
-<a id='section7'></a>
+<a id='section9'></a>
+<h3>Modelagem da codificação que interpreta o valor das cartas</h3>
+
+<a id='section10'></a>
 <h3>Estrutura criada para interpretação das cartas</h3>
 Na função best_hand, a primeira validação é feita para a sequência de cartas que possui o maior tipo de jogada.
 
@@ -105,7 +118,7 @@ Hand_2: (9, [7],[11,5,4])
 
 No caso acima temos uma mão com o valor 8 que representa TWO PAIR e a outra com o valor 9 que equivale a ONE PAIR. A primeira mão ganha por ser mais forte, e isto é validado pelo valor numérico atribuido para cada tipo de jogada. O valor 8 representa que é mais forte que o 9, ou TWO PAIR ganha de ONE PAIR. 
 
-<a id='section8'></a>
+<a id='section11'></a>
 <h3>Verificando um empate</h3>
 No caso de haver um empate as cartas estão separadas de forma que nos possibilitam fazer o uso do maior valor para o menor. Desta forma nesta estrutura criada é possível identificar qual o tipo de jogada, as cartas que fazem parte do tipo de jogo e as cartas que serão utilizadas para desempate.
 
@@ -125,7 +138,10 @@ list_kicker=[3,7,8,9,10]
 - 9º  ***ONE PAIR*** => um par de cartas independente do naipe
 - 10º ***HIGH CARD*** => carta de maior valor
 
-<a id='section9'></a>
+<a id='section12'></a>
+<h3>Evaluation Algoritmo e Métricas</h3>
+
+<a id='section13'></a>
 <h3>Metodologia para os testes</h3>
 Esta separação facilita devido ao tipo de desempate que acontece pelas cartas que compõe a jogada e pelo kicker.
 O retorno após a comparação de cartas para determinar qual a maior jogada são 'WIN' e 'LOSS'.
@@ -133,7 +149,7 @@ A realização dos testes é feita utilizando a lib unittest, o retorno é valid
 
 ![Captura de Tela 2022-03-22 às 22 57 27](https://user-images.githubusercontent.com/49800445/159606668-f08a9828-e52a-44d6-8ce4-b3c4c399b5c7.png)
 
-<a id='section10'></a>
+<a id='section14'></a>
 <h3>Execução dos testes</h3>
 Se houver algum teste em que o resultado seja diferente do predito o programa para de executar e apresenta uma mensagem de erro. Sendo todos os casos executados no teste sem erro, é apresentado uma mensagem de Ok.
 
