@@ -3,6 +3,9 @@
 ___
 - Autor: Marcos Luiz Cliton Bezerra
 + [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=LINK_GIT)](https://github.com/marcos-bezerra)
+
++ [![Linkedin Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=LINK_GIT)](https://www.linkedin.com/in/marcos-bezerra-252375197)
+
 + https://www.linkedin.com/in/marcos-bezerra-252375197
 ---
 
