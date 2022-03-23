@@ -69,6 +69,47 @@ Nesta fase já estamos com a mão de cartas nos formatos abaixo.
 + valores das cartas: [13, 10, 10, 5, 5]
 + naipes das cartas: ['H', 'H', 'C', 'H', 'C']
 
+Na função best_hand, a primeira validação é feita para a sequência de cartas que possui o maior tipo de jogada.
+
+Hand_1: (8, [10, 5], [13])
+Hand_2: (9, [9], [14,5])
++ 8      . o valor 8 representa Two Pair
++ [10,5] . temos Two Pair das cartas 10 e 5
++ [13]   . esta carta é o kicker, que é utilizada para o desempate
++ 
+No caso acima temos uma mão com o valor 8 que representa TWO PAIR e a outra com o valor 9 que equivale a ONE PAIR. A primeira mão ganha por ser mais forte, e isto é validado pelo valor numérico atribuido para cada tipo de jogada. O valor 8 representa que é mais forte que o 9, ou TWO PAIR ganha de ONE PAIR. 
+
+No caso de haver um empate as cartas estão separadas de forma que nos possibilitam fazer o uso do maior valor para o menor. Desta forma nesta estrutura criada é possível identificar qual o tipo de jogada, as cartas que fazem parte do tipo de jogo e as cartas que serão utilizadas para desempate.
+
+Para o desempate existe duas listas que foram criadas. O que diferencia é a característica de terem cinco cartas em sequência (também incluído o FULL HOUSE) ou naipes na jogada.
+
+list_jogos=[1,2,4,5,6]
+- 1º  ***ROYAL STRAIGHT FLUSH*** é uma sequência, de 10-J-Q-K-A, do mesmo naipe.
+- 2º  ***STRAIGHT FLUSH*** => cinco cartas em sequência do mesmo naipe 
+- 4º  ***FULL HOUSE*** => trinca + par, 3 cartas de um valor e um par de outro valor
+- 5º  ***FLUSH*** => cinco cartas em qualquer sequência do mesmo naipe        
+- 6º  ***STRAIGHT*** => Cinco cartas em sequência.
+
+list_kicker=[3,7,8,9,10]
+- 3º  ***FOUR OF A KIND*** => quatro cartas de mesmo valor
+- 7º  ***THREE OF A KIND*** => Três cartas de mesmo valor.
+- 8º  ***TWO PAIR*** => duas cartas de um valor e outras duas cartas de outro valor.
+- 9º  ***ONE PAIR*** => um par de cartas independente do naipe
+- 10º ***HIGH CARD*** => carta de maior valor
+
+Esta separação facilita devido ao tipo de desempate que acontece pelas cartas que compõe o tipo de jogada e pelo kicker.
+Para todos os tipos de jogos é aplicado a seguinte sequência de validação:
++ validando os empates: quadra, trinca, dois pares, um par ou carta mais alta
++ foi utilizado como desempate o valor sequencial da mão em ordem decrescente ("kicker")
++ abaixo um exemplo da lógica utilizada:
++ (8, [10, 5], [13])
++ 8 - O valor 8 indica o tipo de joto "Two Par"
++ [10,5] - Two Par de valores 10 e 5
++ [13] - kicker
++ todas as listas em ordem decrescente
++ sendo utilizadas do maior para o menor valor para o desempate
+
+
 
 
 ![valor_carta_errado](https://user-images.githubusercontent.com/49800445/159579771-93e1b67f-f888-4e89-bab0-158920c1b051.png)
