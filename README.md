@@ -118,9 +118,9 @@ A realização dos testes é feita utilizando a lib unittest, o retorno é valid
 
 ![Captura de Tela 2022-03-22 às 22 57 27](https://user-images.githubusercontent.com/49800445/159606668-f08a9828-e52a-44d6-8ce4-b3c4c399b5c7.png)
 
-Observe que isso é equivalente a e não a (use para o último). Este método também deve ser evitado quando métodos mais específicos estiverem disponíveis (por exemplo , em vez de ), porque eles fornecem uma mensagem de erro melhor em caso de falha.bool(expr) is Trueexpr is TrueassertIs(expr, True)assertEqual(a, b)assertTrue(a == b)
+Sendo executado todos os casos existentes no teste, é apresentado uma mensagem de Ok.
 
-
+![Captura de Tela 2022-03-22 às 23 04 46](https://user-images.githubusercontent.com/49800445/159608375-3e3b4eb0-61f9-413d-9fbe-3b157527fdfc.png)
 
 
 
